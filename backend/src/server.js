@@ -3,7 +3,7 @@ const dotenv = require("dotenv")
 
 dotenv.config()
 
-//verifica se possui a porta "PORT" nas variaveis de ambiente, caso contrário inicia na 8080
+//verifica se possui a porta "PORT" nas variaveis de ambiente, caso contrário inicia na
 const wss = new WebSocketServer({ port: process.env.PORT || 8080 })
 
 wss.on("connection", (ws) => {
